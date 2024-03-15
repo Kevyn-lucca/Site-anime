@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const paragraph = document.querySelector('p');
     const nameCharacter = document.querySelector('h2');
     const principal = document.querySelector('.principal');
-    let currentOpacity = 1; // Opacidade atual da imagem principal
+    let currentOpacity = 1;
 
     buttons.forEach(button => {
         button.addEventListener('click', function() {
@@ -25,27 +25,27 @@ document.addEventListener('DOMContentLoaded', function() {
                 principal.style.opacity = currentOpacity; // Aplica a nova opacidade à imagem principal
 
                 if (currentOpacity <= 0) {
-                    // Ao atingir uma opacidade mínima, atualiza a imagem de fundo
-                    clearInterval(interval); // Interrompe o intervalo
-                    principal.style.backgroundImage = `url(${imgSrc})`; // Aplica a nova imagem de fundo
-                    fadeIn(); // Chama a função para aumentar a opacidade da nova imagem
+                    // atualiza a imagem de fundo
+                    clearInterval(interval); // 
+                    principal.style.backgroundImage = `url(${imgSrc})`; 
+                    fadeIn();
                 }
-            }, 10); // Intervalo de 50ms para uma transição suave
+            }, 10); //
         });
     });
 
     function fadeIn() {
-        let newOpacity = 0; // Opacidade inicial da nova imagem
+        let newOpacity = 0;
 
         // Intervalo para aumentar gradualmente a opacidade da nova imagem
         const interval = setInterval(() => {
-            newOpacity += 0.05; // Aumenta a opacidade gradualmente
-            principal.style.opacity = newOpacity; // Aplica a nova opacidade à imagem principal
+            newOpacity += 0.05; 
+            principal.style.opacity = newOpacity;
 
             if (newOpacity >= 1) {
                 // Quando atingir uma opacidade máxima, limpa o intervalo
                 clearInterval(interval); // Interrompe o intervalo
             }
-        }, 10); // Intervalo de 50ms para uma transição suave
+        }, 10); 
     }
 });
