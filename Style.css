@@ -48,8 +48,6 @@ table {
 body {
     margin: 0;
     padding: 0;
-    
-    font-family: Arial, sans-serif; /* Define a fonte padrão para o corpo */
     overflow-x: hidden;
 }
 
@@ -91,7 +89,7 @@ header {
 /* Estilos para o corpo */
 .principal {
     background-image: url('src/Goku.webp');
-    background-size: cover; /* Ajusta o tamanho da imagem para cobrir todo o elemento */
+    background-size: cover; 
     background-position: center;
     background-repeat: no-repeat;
     box-shadow:  inset 40vw 0px 30px rgba(0, 0, 0, 0.7);
@@ -122,10 +120,10 @@ header {
         margin-left: 2%;
         
     }
-
+/*estilos para o criador*/
 .criador{
     background-image: url(src/Akira.webp);
-    background-size: cover; /* Ajusta o tamanho da imagem para cobrir todo o elemento */
+    background-size: cover; 
     background-position: center;
     padding: 0;
     min-height: 65vw;
@@ -140,21 +138,22 @@ header {
     text-align: right;
 }
 
+/*botões no seletor*/
 .Pimg{
     height: 100px;
     width: 100px;
     border: none;
-    background: none; /* Remove o fundo padrão do botão */
-    padding: 0; /* Remove qualquer preenchimento interno do botão */
-    overflow: hidden; /* Esconde qualquer conteúdo que extrapole o tamanho do botão */
+    background: none; 
+    padding: 0;
+    overflow: hidden; 
     position: relative;
      
 }
 
 .Pimg img {
-    width: 100%; /* Define a largura da imagem como 100% do tamanho do botão */
-    height: 100%; /* Define a altura da imagem como 100% do tamanho do botão */
-    object-fit: cover; /* Garante que a imagem cubra todo o espaço do botão */
+    width: 100%; 
+    height: 100%;
+    object-fit: cover; 
 }
 
 .Pimg:hover {
@@ -167,14 +166,14 @@ header {
     transform: scale(0.6);
 
 }
-
+/*estilos no footer*/
 footer{
-    position: fixed; /* Fixa o footer na parte inferior da janela */
-    bottom: 0; /* Alinha o footer na parte inferior */
-    width: 100%; /* Garante que o footer tenha a largura total */
+    position: fixed; 
+    bottom: 0;
+    width: 100%; 
     background-color: rgb(26, 25, 25);
-    color: white; /* Adiciona cor ao texto do footer */
-    text-align: center; /* Centraliza o texto do footer */
+    color: white; 
+    text-align: center; 
     padding-bottom: 5px;
 }
 
@@ -189,13 +188,8 @@ footer img{
 }
 /* Media queries para ajustar o layout em telas menores */
 @media screen and (max-width: 1000px) {
-    .cabeça h1 {
-        font-size: 1.5em; /* Reduz o tamanho da fonte do título em telas menores */
-        margin-right: 10px; /* Reduz a margem direita do título em telas menores */
-    }
-
     .cabeça ul li {
-        margin-left: 2%; /* Reduz a margem direita dos itens da lista em telas menores */
+        margin-left: 2%;
     }
 
     .principal{
@@ -204,8 +198,8 @@ footer img{
     }
 
     .principal p {
-        padding-top: 2%; /* Ajusta o preenchimento superior do parágrafo em telas menores */
-        padding-right: 50%; /* Ajusta o preenchimento direito do parágrafo em telas menores */
+        padding-top: 2%;
+        padding-right: 50%;
         margin-right: 2.5%;
     }
 
