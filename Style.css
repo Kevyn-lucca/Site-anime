@@ -1,0 +1,214 @@
+User
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, b, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* codigo css */
+body {
+    margin: 0;
+    padding: 0;
+    
+    font-family: Arial, sans-serif; /* Define a fonte padrão para o corpo */
+    overflow-x: hidden;
+}
+
+/* Estilos para o cabeçalho */
+header {
+    top: 0; 
+    background-color: rgb(0, 0, 0);
+    color: white; 
+    padding: 10px; 
+    z-index: 1000; 
+}
+
+.cabeça a{
+    text-decoration: none;
+    color: white;
+}
+
+.cabeça a:hover{
+    color: orange
+}
+
+
+.cabeça img {
+    margin-bottom: -30px;
+    width: 150px ;
+
+}
+
+.cabeça ul {
+    display: inline;
+    list-style-type: none;
+}
+
+.cabeça ul li {
+    display: inline;
+    margin-left: 2%;
+}
+
+/* Estilos para o corpo */
+.principal {
+    background-image: url('src/Goku.webp');
+    background-size: cover; /* Ajusta o tamanho da imagem para cobrir todo o elemento */
+    background-position: center;
+    background-repeat: no-repeat;
+    box-shadow:  inset 40vw 0px 30px rgba(0, 0, 0, 0.7);
+}
+
+.principal h2{
+    color: white;
+    font-size: 40px;
+    padding-top: 20px;
+    margin-left: 11%;
+}
+
+.principal p {
+    padding-top: 2%;
+    padding-right: 60%;
+    background-clip: content-box;
+    color: white;
+    
+}
+
+   #seletor{
+        text-align: center;
+        padding-top:40%;
+        align-self: center
+    }
+    #seletor ul li{
+        display: inline;
+        margin-left: 2%;
+        
+    }
+
+.criador{
+    background-image: url(src/Akira.webp);
+    background-size: cover; /* Ajusta o tamanho da imagem para cobrir todo o elemento */
+    background-position: center;
+    padding: 0;
+    min-height: 65vw;
+    width: fit-content;
+    box-shadow:  inset -40vw 0px 30px rgba(0, 0, 0, 0.7);
+}
+
+.criador p {
+    padding-top: 2%;
+    padding-left: 62%;
+    color: white;
+    text-align: right;
+}
+
+.Pimg{
+    height: 100px;
+    width: 100px;
+    border: none;
+    background: none; /* Remove o fundo padrão do botão */
+    padding: 0; /* Remove qualquer preenchimento interno do botão */
+    overflow: hidden; /* Esconde qualquer conteúdo que extrapole o tamanho do botão */
+    position: relative;
+     
+}
+
+.Pimg img {
+    width: 100%; /* Define a largura da imagem como 100% do tamanho do botão */
+    height: 100%; /* Define a altura da imagem como 100% do tamanho do botão */
+    object-fit: cover; /* Garante que a imagem cubra todo o espaço do botão */
+}
+
+.Pimg:hover {
+    top:-10px;
+    transition: all 2s ease-in-out;
+}
+
+
+.Pimg.clicked img {
+    transform: scale(0.6);
+
+}
+
+footer{
+    position: fixed; /* Fixa o footer na parte inferior da janela */
+    bottom: 0; /* Alinha o footer na parte inferior */
+    width: 100%; /* Garante que o footer tenha a largura total */
+    background-color: rgb(26, 25, 25);
+    color: white; /* Adiciona cor ao texto do footer */
+    text-align: center; /* Centraliza o texto do footer */
+    padding-bottom: 5px;
+}
+
+footer ul li{
+    display: inline;
+    margin-left: 10px;
+}
+
+footer img{
+    height: 30px;
+    margin-top: 5px;
+}
+/* Media queries para ajustar o layout em telas menores */
+@media screen and (max-width: 1000px) {
+    .cabeça h1 {
+        font-size: 1.5em; /* Reduz o tamanho da fonte do título em telas menores */
+        margin-right: 10px; /* Reduz a margem direita do título em telas menores */
+    }
+
+    .cabeça ul li {
+        margin-left: 2%; /* Reduz a margem direita dos itens da lista em telas menores */
+    }
+
+    .principal{
+        box-shadow:  inset 48vw 0px 30px rgba(0, 0, 0, 0.7); 
+
+    }
+
+    .principal p {
+        padding-top: 2%; /* Ajusta o preenchimento superior do parágrafo em telas menores */
+        padding-right: 50%; /* Ajusta o preenchimento direito do parágrafo em telas menores */
+        margin-right: 2.5%;
+    }
+
+ 
+
+}
